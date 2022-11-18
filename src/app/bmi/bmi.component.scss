@@ -1,0 +1,27 @@
+.main{
+    background-color: antiquewhite;
+    height: calc(100% - 50px);
+    min-height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.form{
+    width: 40%;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.height{
+    margin-top: 40px;
+}
+
+.bmi{
+    font-size: 50px;
+}
+
