@@ -5,11 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './silnia.component.html',
   styleUrls: ['./silnia.component.scss']
 })
-export class SilniaComponent implements OnInit {
+export class SilniaComponent{
+  public number: number | null = null;
+  public result: number | null = null;
 
   constructor() { }
 
-  ngOnInit(): void {
+  calculate(): void{
+    if(this.number != null){
+      this.result = 1;
+      for(let i = this.number; i > 0; i--){
+        this.result = this.result * i;
+      }
+    }
   }
 
 }

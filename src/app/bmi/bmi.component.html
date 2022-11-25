@@ -1,11 +1,12 @@
 <div class="main">
     <div class="form">
-        <span class="p-float-label height">
-            <input (change)="calculateBMI()" pInputText [(ngModel)]="height" id="height" class="height-input">
+        <label style="font-size: 50px; margin-top: 20px;">Kalkulator BMI</label>
+        <span class="p-float-label">
+            <input (input)="calculateBMI()" pInputText [(ngModel)]="height" id="height" class="height-input">
             <label for="height">Wzrost</label>
         </span>
     <span class="p-float-label">
-        <input (change)="calculateBMI()" pInputText [(ngModel)]="weight" id="weight" class="weight-input">
+        <input (input)="calculateBMI()" pInputText [(ngModel)]="weight" id="weight" class="weight-input">
         <label for="weight">Waga</label>
     </span>
     <label class="bmi">BMI: {{bmi}}</label>

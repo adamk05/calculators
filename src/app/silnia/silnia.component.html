@@ -1,1 +1,10 @@
-<p>silnia works!</p>
+<div class="main">
+    <div class="form">
+        <label  style="font-size: 50px;  margin-top: 20px;">Silnia</label>
+        <span class="p-float-label">
+            <input type="number" (input)="calculate()" pInputText [(ngModel)]="number" id="number" class="number-input">
+            <label for="number">Liczba</label>
+        </span>
+    <label class="result" [ngClass]="result == null ? 'hide' : 'show'">{{number}}! = {{result}}</label>
+</div>
+</div>

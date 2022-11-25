@@ -1,10 +1,14 @@
 .main{
-    background-color: antiquewhite;
+    background: rgb(206,251,254);
+    background: linear-gradient(90deg, rgba(206,251,254,1) 0%, rgba(241,255,255,1) 50%, rgba(206,251,254,1) 100%);
     height: calc(100% - 50px);
     min-height: 100%;
     width: 80%;
     margin-left: 10%;
     font-size: 20px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    box-shadow: 0px 0px 10px black;
 }
 
 .form{
@@ -15,10 +19,6 @@
     flex-wrap: wrap;
     align-items: center;
     row-gap: 30px;
-}
-
-.height{
-    margin-top: 40px;
 }
 
 .bmi{
